@@ -1,12 +1,11 @@
-fila {
+.columna {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
-    margin: 15px auto;
-    flex-wrap: wrap;
   }
 
-  .fila a {
+  .columna a {
     font-size: smaller;
     background-color: white;
     color: blue;
@@ -15,14 +14,21 @@ fila {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    min-width: 150px;
+    width: 220px;
     text-align: center;
   }
 
-  .fila a:hover {
+  .columna a:hover {
     background-color: red;
     color: white;
     border-color: red;
+  }
+
+  @media (max-width: 768px) {
+    #lista {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   @media (max-width: 768px) {
