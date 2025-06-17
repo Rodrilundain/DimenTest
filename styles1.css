@@ -1,17 +1,18 @@
-ul li {
-    margin: 10px 0;
-  }
-
-  ul li a {
+ ul li a {
     font-size: smaller;
-    display: inline-block;
+    display: block;
     background-color: white;
-    color: black;
+    color: blue;
     padding: 10px 20px;
     border: 1px solid #ccc;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     border-radius: 5px;
+    max-width: 90vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   ul li a:hover {
@@ -19,8 +20,6 @@ ul li {
     color: white;
     border-color: red;
   }
-
-
 /* General styles */
 body {
     padding: 0;
