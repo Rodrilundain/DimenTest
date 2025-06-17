@@ -1,11 +1,19 @@
-.columna {
+ #lista {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    margin-top: 30px;
   }
 
-  .columna a {
+  .fila {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fila a {
     font-size: smaller;
     background-color: white;
     color: blue;
@@ -14,14 +22,21 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
-    width: 220px;
+    min-width: 160px;
     text-align: center;
   }
 
-  .columna a:hover {
+  .fila a:hover {
     background-color: red;
     color: white;
     border-color: red;
+  }
+
+  @media (max-width: 768px) {
+    .fila {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   @media (max-width: 768px) {
