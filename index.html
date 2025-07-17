@@ -12,20 +12,21 @@
   <base target="_blank" rel="noopener noreferrer">
   <style>
     .ContIcons {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
       max-width: 1280px;
       margin: 60px auto;
       padding: 0 20px;
     }
     .icon {
+      width: 160px;
       display: flex;
       justify-content: center;
     }
     .icon a {
       width: 100%;
-      max-width: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,17 +53,17 @@
     }
     @media (max-width: 1200px) {
       .ContIcons {
-        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
       }
     }
     @media (max-width: 992px) {
       .ContIcons {
-        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
       }
     }
     @media (max-width: 768px) {
       .ContIcons {
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
       }
     }
   </style>
